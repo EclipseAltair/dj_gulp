@@ -6,20 +6,17 @@ __pycache__
 .vscode/
 env/
 node_modules/
-static/assets/libs/
 main/migrations/
+package.json
+package-lock.json
 
 
-/package.json
-/package-lock.json
-/.bowerrc
-/.editorconfig
-/.eslintrc.json
-/commands
-/gulpfile.js
-/installation
-/package.json
-/package-lock.json
-/requirements.txt
-/smart-grid-config.js
-/static/assets/sass/
+#Uncoment and delete to deploy
+#/static/assets/sass/
+#/.bowerrc
+#/.editorconfig
+#/.eslintrc.json
+#/gulpfile.js
+#/README.md
+#/requirements.txt
+#/smart-grid-config.js

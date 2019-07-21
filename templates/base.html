@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% block canonical %}{% endblock %}
+  <title>{% block title %}{% endblock %}</title>
+  {% block description %}{% endblock %}
+  {% block keywords %}{% endblock %}
+  <link rel="manifest" href="/manifest.json">
+  <!-- Template Basic Images -->
+
+  <!-- Custom Browsers Color -->
+  <meta name="theme-color" content="#000">
+  <!-- Styles & Scripts-->
+    <!-- CDN Styles -->
+
+    <!-- Local Styles -->
+  <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+</head>
+<body>
+  {% include 'header.html' %}
+
+  {% block content %}
+  {% endblock %}
+
+  {% include 'footer.html' %}
+
+  <!-- Scripts -->
+  <script src="{% static 'js/scripts.min.js' %}"></script>
+</body>
+</html>
