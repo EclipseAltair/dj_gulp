@@ -3,16 +3,16 @@
 ЗАПУСК
 ________________________________________________________________
 
-Terminal 1:  
--Запуск gulp  
+Terminal 1:  
+-Запуск gulp  
 gulp
 
-Terminal 2:  
--Запуск локального сервера  
-cd projectenv/Scripts  
-activate.bat  
-cd ..  
-cd ..  
+Terminal 2:  
+-Запуск локального сервера  
+cd projectenv/Scripts  
+activate.bat  
+cd ..  
+cd ..  
 py manage.py runserver
 
 
