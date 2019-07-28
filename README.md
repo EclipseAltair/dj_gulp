@@ -1,13 +1,13 @@
-﻿________________________________________________________________
+﻿﻿________________________________________________________________
 
 ЗАПУСК
 ________________________________________________________________
 
-Terminal 1:  
+Terminal 1:
 -Запуск gulp
 gulp
 
-Terminal 2:  
+Terminal 2:
 -Запуск локального сервера
 cd projectenv/Scripts
 activate.bat
@@ -69,11 +69,11 @@ pip freeze > requirements.txt
 -Установить пакеты из requirements.txt:
 pip install -r requirements.txt
 
--Установка сетки:  
+-Установка сетки:
 npm i smart-grid --save-dev
 -Создать smart-grid-config.js
 node smart-grid-config.js
 
--Проверить версию:  
-npm -v  
+-Проверить версию:
+npm -v
 gulp -v
