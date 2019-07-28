@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'analytical',
     'main',
 ]
 
@@ -91,6 +92,8 @@ USE_L10N = True
 USE_TZ = True
 
 SITE_ID = 1
+
+YANDEX_METRICA_COUNTER_ID = ''
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')

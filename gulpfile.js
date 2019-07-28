@@ -1,21 +1,22 @@
 var syntax = 'sass';
 
-var gulp 		      	= require('gulp'),
+var gulp 		        = require('gulp'),
     sass 			      = require('gulp-sass'),
     concat        	= require('gulp-concat'),
+    uglify        	= require('gulp-uglify-es').default,
     cleancss      	= require('gulp-clean-css'),
     rename			    = require('gulp-rename'),
     autoprefixer  	= require('gulp-autoprefixer'),
     notify        	= require('gulp-notify'),
     livereload 	  	= require('gulp-livereload');
 
-gulp.task('styles', function() { // Создаем таск Sass
-  return gulp.src('./static/assets/'+syntax+'/**/*.'+syntax) // Берем источник
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', notify.onError())) // Преобразуем Sass в CSS посредством gulp-sass
+gulp.task('styles', function() {
+  return gulp.src('./static/assets/'+syntax+'/**/*.'+syntax)
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', notify.onError()))
     .pipe(rename({ suffix: '.min', prefix : '' }))
     .pipe(autoprefixer(['last 15 versions']))
-    .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Закомментить при дебаге
-    .pipe(gulp.dest('./static/assets/css')) // Выгружаем результат в папку static/assets/css
+    .pipe(cleancss( {level: { 1: { specialComments: 0 } } }))
+    .pipe(gulp.dest('./static/assets/css'))
     .pipe(livereload());
 });
 
@@ -25,9 +26,9 @@ gulp.task('scripts', function() {
     './static/assets/libs/slick/slick.js',
     './static/assets/js/common.js'
   ])
-    .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле scripts.min.js
-  // .pipe(uglify()) // Сжимаем JS файл, Mifify js (opt.)
-    .pipe(gulp.dest('./static/assets/js')) // Выгружаем в папку static/assets/js
+    .pipe(concat('scripts.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./static/assets/js'))
     .pipe(livereload());
 });
 

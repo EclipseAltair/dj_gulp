@@ -1,4 +1,4 @@
-________________________________________________________________
+﻿________________________________________________________________
 
 ЗАПУСК
 ________________________________________________________________
@@ -9,7 +9,7 @@ gulp
 
 Terminal 2:
 -Запуск локального сервера
-cd env/Scripts
+cd projectenv/Scripts
 activate.bat
 cd ..
 cd ..
@@ -22,14 +22,14 @@ ________________________________________________________________
 ________________________________________________________________
 
 -Создание и запуск виртуального окружения
-py -m venv env
-cd env/Scripts
+py -m venv projectenv
+cd projectenv/Scripts
 activate.bat
 cd ..
 cd ..
 
 -Устнаовка плагинов
-pip install django django-livereload-server psycopg2
+pip install django django-livereload-server psycopg2 django-analytical
 
 -Скачать nodejs
 
@@ -43,7 +43,7 @@ npm i -g gulp bower eslint
 npm i gulp --save-dev	        # создание node_modules
 
 -Сохранение в package.json плагинов
-npm i gulp-sass gulp-concat gulp-clean-css gulp-rename gulp-autoprefixer gulp-notify gulp-livereload --save-dev
+npm i gulp-sass gulp-concat gulp-uglify-es gulp-clean-css gulp-rename gulp-autoprefixer gulp-notify gulp-livereload --save-dev
 
 -Скачать git
 

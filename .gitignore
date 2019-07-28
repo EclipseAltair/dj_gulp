@@ -4,7 +4,7 @@
 __pycache__
 .idea/
 .vscode/
-env/
+projectenv/     # изменить
 node_modules/
 main/migrations/
 static/assets/libs/
