@@ -4,7 +4,7 @@
 __pycache__
 .idea/
 .vscode/
-projectenv/     # изменить
+set_fullstackenv/     # изменить
 node_modules/
 main/migrations/
 static/assets/libs/
@@ -14,10 +14,10 @@ package-lock.json
 
 #Uncoment and delete to deploy
 #/static/assets/sass/
+#/static/assets/js/common.js
 #/.bowerrc
 #/.editorconfig
 #/.eslintrc.json
 #/gulpfile.js
 #/README.md
-#/requirements.txt
 #/smart-grid-config.js

@@ -57,8 +57,8 @@ ________________________________________________________________
 ________________________________________________________________
 
 -Команды Django:  
-py manage.py makemigrations  
-py manage.py migrate  
+py manage.py makemigrations
+py manage.py migrate
 py manage.py createsuperuser  
 py manage.py dumpdata > dump.json  
 py manage.py loaddata dump.json

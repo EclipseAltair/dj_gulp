@@ -20,7 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'analytical',
-    'main',
+    'main'
 ]
 
 MIDDLEWARE = [
@@ -58,9 +58,9 @@ WSGI_APPLICATION = 'set_fullstack.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'name',
+        'NAME': 'set_fullstack',
         'USER': 'postgres',
-        'PASSWORD': 'pass',
+        'PASSWORD': 'Guido!956',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -93,7 +93,10 @@ USE_TZ = True
 
 SITE_ID = 1
 
-YANDEX_METRICA_COUNTER_ID = ''
+YANDEX_METRICA_COUNTER_ID = '00000000'
+YANDEX_METRICA_WEBVISOR	= True
+YANDEX_METRICA_TRACKHASH = True
+
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
