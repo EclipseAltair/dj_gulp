@@ -13,7 +13,6 @@ migrations
 
 
 #Uncoment and delete to deploy
-#/static/assets/fonts/
 #/static/assets/sass/
 #/static/assets/js/
 #/.bowerrc
