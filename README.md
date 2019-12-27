@@ -13,7 +13,7 @@ cd set_fullstackenv/Scripts
 activate.bat  
 cd ..  
 cd ..  
-py manage.py runserver
+py devmanage.py runserver
 
 
 ________________________________________________________________
@@ -57,11 +57,11 @@ ________________________________________________________________
 ________________________________________________________________
 
 -Команды Django:  
-py manage.py makemigrations
-py manage.py migrate
-py manage.py createsuperuser  
-py manage.py dumpdata > dump.json  
-py manage.py loaddata dump.json
+py devmanage.py makemigrations
+py devmanage.py migrate
+py devmanage.py createsuperuser  
+py devmanage.py dumpdata > dump.json  
+py devmanage.py loaddata dump.json
 
 -Создать requirements.txt:  
 pip freeze > requirements.txt

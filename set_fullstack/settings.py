@@ -6,11 +6,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'am3q^8&+sgow*@)cqip4m@gd8b8k^5nc*%py%_50$82x9p6)4u'
 
-DEBUG = True
-#DEBUG = False
+DEBUG = False
 
-ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -59,7 +57,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'set_fullstack',
-        'USER': 'postgres',
+        'USER': 'set_fullstackuser',
         'PASSWORD': 'Guido!956',
         'HOST': 'localhost',
         'PORT': '',
