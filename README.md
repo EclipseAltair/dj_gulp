@@ -9,7 +9,7 @@ gulp
 
 Terminal 2:  
 -Запуск локального сервера  
-cd projectenv/Scripts  
+cd set_fullstackenv/Scripts  
 activate.bat  
 cd ..  
 cd ..  
@@ -23,7 +23,7 @@ ________________________________________________________________
 
 -Создание и запуск виртуального окружения:  
 py -m venv projectenv  
-cd projectenv/Scripts  
+cd set_fullstackenv/Scripts  
 activate.bat  
 cd ..  
 cd ..
@@ -48,7 +48,7 @@ npm i gulp-sass gulp-concat gulp-uglify-es gulp-clean-css gulp-rename gulp-autop
 -Скачать git
 
 -Скачивание библиотек:  
-bower i jquery
+bower i jquery components-font-awesome --save
 
 
 ________________________________________________________________

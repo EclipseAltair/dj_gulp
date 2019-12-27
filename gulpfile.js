@@ -21,21 +21,24 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src([ // Берем все необходимые библиотеки
-    './static/assets/libs/jquery/jquery.min.js', // Берем jQuery
+  return gulp.src([
+    './static/assets/libs/jquery/jquery.min.js', 
     './static/assets/libs/slick/slick.js',
-    './static/assets/js/common.js'
+    './static/assets/js/**/*.js'
   ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./static/assets/js'))
+    .pipe(gulp.dest('./static/assets/dist-js'))
     .pipe(livereload());
 });
 
 gulp.task('watch',  function() {
   livereload.listen();
   gulp.watch('./static/assets/'+syntax+'/**/*.'+syntax, gulp.parallel('styles'));
-  gulp.watch(['./static/assets/libs/**/*.js', './static/assets/js/common.js'], gulp.parallel('scripts'));
+  gulp.watch([
+      './static/assets/libs/**/*.js', 
+      './static/assets/js/**/*.js'
+    ], gulp.parallel('scripts'));
   gulp.watch('./templates/**/*.html').on('change', livereload.changed);
 });
 

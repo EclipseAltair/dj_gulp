@@ -4,17 +4,18 @@
 __pycache__
 .idea/
 .vscode/
-set_fullstackenv/     # изменить
-node_modules/
-main/migrations/
-static/assets/libs/
-package.json
-package-lock.json
+/set_fullstackenv/
+/node_modules/
+migrations
+/static/assets/libs/
+/package.json
+/package-lock.json
 
 
 #Uncoment and delete to deploy
+#/static/assets/fonts/
 #/static/assets/sass/
-#/static/assets/js/common.js
+#/static/assets/js/
 #/.bowerrc
 #/.editorconfig
 #/.eslintrc.json

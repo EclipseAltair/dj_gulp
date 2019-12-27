@@ -4,8 +4,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 from .sitemap import StaticViewSitemap
+from main import views as main_views
 
 
 robots = 'User-agent: *\n' \
@@ -23,6 +25,7 @@ manifest = '{"name":"",' \
            '"theme_color":"#000",' \
            '"background_color":"#000",' \
            '"description":"",' \
+           '"serviceworker":{"src": "/sw.js"},' \
            '"icons":' \
             '[{"src":"img/favicon-16x16.png",' \
             '"sizes":"16x16",' \
@@ -33,7 +36,7 @@ manifest = '{"name":"",' \
             '{"src":"img/favicon-196x196.png",' \
             '"sizes":"196x196",' \
             '"type":"image/png"},' \
-            '{"src":"img/favicon-196x196.png",' \
+            '{"src":"img/favicon-512x512.png",' \
             '"sizes":"512x512",' \
             '"type":"image/png"}]}'
 
@@ -44,8 +47,11 @@ urlpatterns = [
     path('', include('main.urls')),
     path('robots.txt', lambda r: HttpResponse(robots, content_type="text/plain")),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-    path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json"))
-
+    path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json")),
+    path('sw.js', (TemplateView.as_view(template_name="sw.js", content_type='application/javascript', )), name='sw.js'),
 ] \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = main_views.error_404
+handler500 = main_views.error_500
