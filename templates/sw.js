@@ -10,8 +10,8 @@
 // var CACHE_NAME = '*-cache-v1';
 // var urlsToCache = [
 //   '/',
-//   '/static/css/style.min.css',
-//   '/static/js/scripts.min.js'
+//   '/static/css/styles.min.css',
+//   '/static/dist-js/scripts.min.js'
 // ];
 //
 // self.addEventListener('install', function(event) {
@@ -28,7 +28,6 @@
 //   event.respondWith(
 //     caches.match(event.request)
 //       .then(function(response) {
-//
 //         if (response) {
 //           return response;
 //         }
