@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+from .secret import *
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'am3q^8&+sgow*@)cqip4m@gd8b8k^5nc*%py%_50$82x9p6)4u'
+SECRET_KEY = SECRET_KEY
 
 DEBUG = False
 
@@ -56,9 +57,9 @@ WSGI_APPLICATION = 'set_fullstack.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'set_fullstack',
-        'USER': 'set_fullstackuser',
-        'PASSWORD': 'Guido!956',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -90,6 +91,12 @@ USE_L10N = True
 USE_TZ = True
 
 SITE_ID = 1
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = EMAIL
+EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 
 YANDEX_METRICA_COUNTER_ID = '00000000'
 YANDEX_METRICA_WEBVISOR	= True

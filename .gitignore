@@ -13,6 +13,7 @@ migrations
 
 
 #Uncoment and delete to deploy
+#/set_fullstack/secret.py
 #/devmanage.py
 #/set_fullstack/devsettings.py
 #/set_fullstack/devurls.py
