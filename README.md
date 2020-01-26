@@ -50,8 +50,8 @@ ________________________________________________________________
 ________________________________________________________________
 
 -Команды Django:  
-py devmanage.py makemigrations
-py devmanage.py migrate
+py devmanage.py makemigrations  
+py devmanage.py migrate  
 py devmanage.py createsuperuser  
 py devmanage.py dumpdata > dump.json  
 py devmanage.py loaddata dump.json
@@ -62,5 +62,5 @@ pip freeze > requirements.txt
 -Установить пакеты из requirements.txt:  
 pip install -r requirements.txt
 
--Передача пользователю права на доступ к БД в psql:
+-Передача пользователю права на доступ к БД в psql:  
 GRANT ALL PRIVILEGES ON DATABASE set_fullstack TO set_fullstackuser;
