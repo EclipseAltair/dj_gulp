@@ -12,7 +12,7 @@ migrations
 /package-lock.json
 
 
-#Uncoment and delete to deploy
+#Uncoment and delete in repo before deploy
 #/set_fullstack/secret.py
 #/devmanage.py
 #/set_fullstack/devsettings.py
@@ -24,4 +24,3 @@ migrations
 #/.eslintrc.json
 #/gulpfile.js
 #/README.md
-#/smart-grid-config.js

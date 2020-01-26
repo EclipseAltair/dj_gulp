@@ -9,10 +9,6 @@ gulp
 
 Terminal 2:  
 -Запуск локального сервера  
-cd set_fullstackenv/Scripts  
-activate.bat  
-cd ..  
-cd ..  
 py devmanage.py runserver
 
 
@@ -23,10 +19,7 @@ ________________________________________________________________
 
 -Создание и запуск виртуального окружения:  
 py -m venv set_fullstackenv  
-cd set_fullstackenv/Scripts  
-activate.bat  
-cd ..  
-cd ..
+Settings -> Project Settings -> Project Interpreter -> set_fullstackenv  
 
 -Устнаовка плагинов:  
 pip install django django-livereload-server psycopg2 django-analytical
@@ -69,11 +62,5 @@ pip freeze > requirements.txt
 -Установить пакеты из requirements.txt:  
 pip install -r requirements.txt
 
--Установка сетки:  
-npm i smart-grid --save-dev  
--Создать smart-grid-config.js  
-node smart-grid-config.js
-
--Проверить версию:  
-npm -v  
-gulp -v
+-Передача пользователю права на доступ к БД в psql:
+GRANT ALL PRIVILEGES ON DATABASE set_fullstack TO set_fullstackuser;
