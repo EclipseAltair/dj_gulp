@@ -1,11 +1,11 @@
 *.sqlite3
 *.pyc
 *~
-__pycache__
+__pycache__/
 .idea/
 .vscode/
 /set_fullstackenv/
-migrations
+migrations/
 /static/assets/libs/
 /node_modules/
 /package.json
