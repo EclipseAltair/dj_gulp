@@ -1,14 +1,14 @@
-var syntax = 'sass';
+let syntax = 'sass';
 
-var gulp 		        = require('gulp'),
-    sass 			      = require('gulp-sass'),
-    concat        	= require('gulp-concat'),
-    uglify        	= require('gulp-uglify-es').default,
-    cleancss      	= require('gulp-clean-css'),
-    rename			    = require('gulp-rename'),
-    autoprefixer  	= require('gulp-autoprefixer'),
-    notify        	= require('gulp-notify'),
-    livereload 	  	= require('gulp-livereload');
+const gulp 		        = require('gulp'),
+      sass 			      = require('gulp-sass'),
+      concat        	= require('gulp-concat'),
+      uglify        	= require('gulp-uglify-es').default,
+      cleancss      	= require('gulp-clean-css'),
+      rename			    = require('gulp-rename'),
+      autoprefixer  	= require('gulp-autoprefixer'),
+      notify        	= require('gulp-notify'),
+      livereload 	  	= require('gulp-livereload');
 
 gulp.task('styles', function() {
   return gulp.src('./static/assets/'+syntax+'/**/*.'+syntax)
@@ -22,7 +22,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src([
-    './static/assets/libs/jquery/jquery.min.js', 
+    './static/assets/libs/jquery/dist/jquery.min.js', 
     './static/assets/libs/slick/slick.js',
     './static/assets/js/**/*.js'
   ])

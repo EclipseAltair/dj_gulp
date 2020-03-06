@@ -9,7 +9,6 @@ migrations/
 /static/assets/libs/
 /node_modules/
 /package.json
-/package-lock.json
 
 
 #Uncoment and delete in repo before deploy
