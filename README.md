@@ -18,11 +18,11 @@ ________________________________________________________________
 ________________________________________________________________
 
 -Создание и запуск виртуального окружения:  
-py -m venv set_fullstackenv  
-Settings -> Project Settings -> Project Interpreter -> set_fullstackenv  
+py -m venv dgenv  
+Settings -> Project Settings -> Project Interpreter -> dgenv  
 
 -Устнаовка плагинов:  
-pip install django django-livereload-server psycopg2 django-analytical
+pip install django django-livereload-server psycopg2
 
 -Скачать nodejs
 
@@ -63,4 +63,4 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 
 -Передача пользователю права на доступ к БД в psql:  
-GRANT ALL PRIVILEGES ON DATABASE set_fullstack TO set_fullstackuser;
+GRANT ALL PRIVILEGES ON DATABASE dg TO dguser;

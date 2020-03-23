@@ -22,8 +22,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
   return gulp.src([
-    './static/assets/libs/jquery/dist/jquery.min.js', 
-    './static/assets/libs/slick/slick.js',
+    './static/assets/libs/jquery/dist/jquery.min.js',
     './static/assets/js/**/*.js'
   ])
     .pipe(concat('scripts.min.js'))

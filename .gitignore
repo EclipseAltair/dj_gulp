@@ -4,7 +4,7 @@
 __pycache__/
 .idea/
 .vscode/
-/set_fullstackenv/
+/dgenv/
 migrations/
 /static/assets/libs/
 /node_modules/
@@ -12,10 +12,10 @@ migrations/
 
 
 #Uncoment and delete in repo before deploy
-#/set_fullstack/secret.py
+#/dj_gulp/secret.py
 #/devmanage.py
-#/set_fullstack/devsettings.py
-#/set_fullstack/devurls.py
+#/dj_gulp/devsettings.py
+#/dj_gulp/devurls.py
 #/static/assets/sass/
 #/static/assets/js/
 #/.bowerrc
