@@ -1,25 +1,27 @@
-*.sqlite3
-*.pyc
-*~
-__pycache__/
+# IDE
 .idea/
-.vscode/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
 /dgenv/
 migrations/
-/static/assets/libs/
-/node_modules/
-/package.json
-
-
-#Uncoment and delete in repo before deploy
-#/dj_gulp/secret.py
-#/devmanage.py
 #/dj_gulp/devsettings.py
 #/dj_gulp/devurls.py
+/dj_gulp/secret.py
+/static/assets/libs/
 #/static/assets/sass/
 #/static/assets/js/
+#/devmanage.py
+
+# Other
+/node_modules/
 #/.bowerrc
 #/.editorconfig
 #/.eslintrc.json
+#/.npmrc
 #/gulpfile.js
+/package.json
 #/README.md
